@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Skool Cover Generator (1084 x 576)</title>
+<meta name="description" content="Free Skool cover generator. Export a 1084 x 576 PNG, preview it as a Discovery card, check the square-crop safe area and run a 5-point cover check. No sign-up, no email.">
+<link rel="canonical" href="https://sheepdontmoo.github.io/skool-cover-generator/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sheepdontmoo.github.io/skool-cover-generator/">
+<meta property="og:title" content="Free Skool Cover Generator (1084 x 576)">
+<meta property="og:description" content="Make a Skool group cover in your browser. Exact 1084 x 576 PNG, Discovery preview, square-crop check. Free, no sign-up.">
+<meta property="og:image" content="https://sheepdontmoo.github.io/skool-cover-generator/bg/fitness.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Free Skool Cover Generator (1084 x 576)","url":"https://sheepdontmoo.github.io/skool-cover-generator/","applicationCategory":"DesignApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Cover Club"}}</script>
+<style>
+:root{--y:#FFD23F;--bk:#0E0E10;--g:#BDBDC6;--card:#17171b;--line:#2c2c33}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Poppins,system-ui,sans-serif;background:var(--bk);color:#fff;line-height:1.5}
+a{color:var(--y)}
+header,main,footer{max-width:1200px;margin:0 auto;padding:16px 20px}
+header{display:flex;align-items:center;gap:12px}
+.logo{width:38px;height:38px;border-radius:10px;background:var(--y);color:#111;font-weight:800;display:flex;align-items:center;justify-content:center}
+header nav{margin-left:auto;display:flex;gap:16px;font-size:14px}header nav a{color:var(--g);text-decoration:none}
+h1{font-size:clamp(28px,4.4vw,46px);line-height:1.1;margin:8px 0}h1 span{color:var(--y)}
+p.lead{color:var(--g);font-size:17px;max-width:760px;margin:0 0 18px}
+.wrap{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:22px;align-items:start}
+@media(max-width:940px){.wrap{grid-template-columns:minmax(0,1fr)}}
+.stage{position:relative}
+canvas.main{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#222}
+canvas.ov{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;border-radius:14px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+label,.lbl{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g);margin:12px 0 6px}
+input[type=text],select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #33333b;background:var(--bk);color:#fff;font:inherit;font-size:16px}
+textarea{min-height:60px;resize:vertical}.row{display:flex;gap:10px}.row>*{flex:1;min-width:0}
+button,.btn{display:inline-block;cursor:pointer;border:0;border-radius:10px;padding:12px 16px;font:700 15px Poppins,sans-serif;background:var(--y);color:#111;text-decoration:none;text-align:center}
+button.ghost{background:#26262c;color:#fff}.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.btns>*{flex:1 1 auto}
+.tip{font-size:13px;color:var(--g);margin-top:6px}
+.bgs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.bgs button{padding:0;border-radius:8px;overflow:hidden;border:2px solid transparent;background:#222;aspect-ratio:1084/576;font-size:11px;color:#fff}
+.bgs button img{width:100%;height:100%;object-fit:cover;display:block}
+.bgs button.on{border-color:var(--y)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+@media(max-width:700px){.grid2{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.box h2{font-size:17px;margin:0 0 4px}.box p.s{color:var(--g);font-size:13px;margin:0 0 12px}
+/* Discovery-style card mock (approximation, not Skool's exact UI) */
+.dcard{width:100%;max-width:330px;background:#fff;color:#202124;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.4);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.dcard canvas{display:block;width:100%;height:auto}
+.dcard .b{padding:10px 12px 14px}.dcard .t{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px}
+.dcard .ic{width:28px;height:28px;border-radius:7px;flex:none}
+.dcard .d{font-size:13px;color:#555;margin-top:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.dcard .m{font-size:12px;color:#888;margin-top:8px}
+.sq{display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.sq canvas{width:170px;height:170px;border-radius:10px;border:1px solid var(--line);flex:none}
+.warn{font-size:14px;padding:10px 12px;border-radius:10px;flex:1;min-width:160px}
+.warn.bad{background:#3a1616;border:1px solid #7a2a2a;color:#ffd6d6}.warn.ok{background:#14301d;border:1px solid #2b6b40;color:#d3ffe0}
+ul.check{list-style:none;padding:0;margin:0}ul.check li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #24242a;font-size:14px}
+ul.check li:last-child{border:0}.st{flex:none;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+.st.p{background:#2ECC71;color:#062}.st.f{background:#E63946;color:#fff}.st.m{background:#33333b;color:var(--g)}
+ul.check small{display:block;color:var(--g);font-size:12px}
+ul.check input{width:18px;height:18px;margin:3px 0 0;accent-color:var(--y)}
+#score{font-weight:800;color:var(--y)}
+.after{display:none;margin-top:18px;padding:20px;border-radius:14px;background:linear-gradient(120deg,#1b1b20,#2a2510);border:1px solid #5a4d16}
+.after.show{display:block}.after p{margin:0 0 12px;font-size:17px}
+.cta{margin:36px 0;padding:26px;border-radius:16px;background:linear-gradient(120deg,#1b1b20,#26230f);border:1px solid #3a3416}
+.cta h2{margin:0 0 8px}.cta p{color:var(--g);margin:0 0 16px}
+.faq h2{margin-top:10px}.faq h3{margin:20px 0 4px;font-size:17px}.faq p{color:var(--g);margin:0}
+footer{color:#77777f;font-size:13px;border-top:1px solid #1f1f24;margin-top:30px}footer a{color:var(--g)}
+.sr{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+<header><div class="logo">CC</div><strong>COVER CLUB</strong>
+<nav><a href="/skool-cover-image-size/">Cover size</a><a href="/skool-about-page-image-size/">About image size</a></nav></header>
+<main>
+<h1>Free <span>Skool cover</span> generator (1084 x 576)</h1>
+<p class="lead">Make a Skool group cover at 1084 x 576, the size Skool recommends. Type your promise, pick a background and download the PNG. You get a Discovery card preview, a square-crop check and a 5-point cover check. It's free, there's no email or sign-up, and nothing leaves your browser.</p>
+
+<div class="wrap">
+  <div>
+    <div class="stage">
+      <canvas id="cv" class="main" width="1084" height="576" aria-label="Cover preview, 1084 by 576 pixels"></canvas>
+      <canvas id="ov" class="ov" width="1084" height="576" aria-hidden="true"></canvas>
+    </div>
+    <p class="tip"><label style="display:inline;text-transform:none;letter-spacing:0;font-weight:500"><input type="checkbox" id="guides" checked> Show the square safe area (dashed box). The guides are never exported.</label></p>
+  </div>
+  <div class="panel">
+    <span class="lbl">Background</span>
+    <div class="bgs" id="bgs"></div>
+    <label for="bgimg">Or upload your own photo</label><input id="bgimg" type="file" accept="image/*">
+    <label for="head">Headline (6 words max)</label><textarea id="head" maxlength="80">Build strength that lasts</textarea>
+    <div class="row">
+      <div><label for="badge">Niche badge</label><input id="badge" type="text" value="Fitness" maxlength="24"></div>
+      <div><label for="align">Layout</label><select id="align"><option value="center">Centred (safe)</option><option value="left">Text left</option></select></div>
+    </div>
+    <label for="sub">Subline</label><input id="sub" type="text" value="12-week program, weekly check-ins" maxlength="60">
+    <div class="row">
+      <div><label for="accent">Accent</label><input id="accent" type="color" value="#FFD23F" style="width:100%;height:40px;border:0;background:none;padding:0"></div>
+      <div><label for="shade">Darken photo</label><select id="shade"><option value=".55">Medium</option><option value=".35">Light</option><option value=".75">Strong</option><option value="0">None</option></select></div>
+    </div>
+    <div class="btns"><button id="dl">Download cover PNG (1084 x 576)</button><button id="dlicon" class="ghost">Download icon (128 x 128)</button></div>
+    <div class="after" id="after" role="status">
+      <p><strong>Your cover is downloaded.</strong> Want the full library (covers + About images + ad creatives)? Cover Club, $9/mo.</p>
+      <a class="btn" href="https://www.skool.com/tryna-figure-sht-out-3458/about?ref=gen" rel="noopener" target="_blank">See Cover Club →</a>
+    </div>
+  </div>
+</div>
+
+<div class="grid2">
+  <section class="box">
+    <h2>Discovery card preview</h2>
+    <p class="s">Roughly how small your cover looks on a Skool Discovery card. This is what people actually see. (Approximate mock-up, not Skool's exact layout.)</p>
+    <div class="row" style="margin-bottom:10px">
+      <div><label for="gname">Group name</label><input id="gname" type="text" value="Strength Lab" maxlength="40"></div>
+      <div><label for="gprice">Price label</label><input id="gprice" type="text" value="Paid" maxlength="20"></div>
+    </div>
+    <label for="gdesc">One-liner</label><input id="gdesc" type="text" value="A 12-week strength program with weekly check-ins." maxlength="150">
+    <div style="margin-top:14px" class="dcard"><canvas id="dc" width="660" height="351"></canvas>
+      <div class="b"><div class="t"><canvas id="dic" class="ic" width="56" height="56"></canvas><span id="dname"></span></div>
+      <div class="d" id="ddesc"></div><div class="m" id="dprice"></div></div></div>
+  </section>
+  <section class="box">
+    <h2>Square-crop check</h2>
+    <p class="s">Covers can be cropped to a square in some places, such as ad formats. Only the centre 576 x 576 survives, so keep your words inside it.</p>
+    <div class="sq"><canvas id="sqc" width="340" height="340" aria-label="Square crop preview"></canvas><div class="warn ok" id="sqw">Checking…</div></div>
+    <h2 style="margin-top:18px">5-point cover check <span id="score"></span></h2>
+    <ul class="check" id="checks"></ul>
+  </section>
+</div>
+
+<section class="cta">
+  <h2>Want ready-made covers, About images and ad creatives?</h2>
+  <p>Cover Club is a Skool group with editable cover templates, About page images and ad creatives for lots of niches. $9 a month.</p>
+  <a class="btn" href="https://www.skool.com/tryna-figure-sht-out-3458/about?ref=gen" rel="noopener">See what's inside Cover Club →</a>
+</section>
+
+<section class="faq">
+  <h2>Skool cover FAQ</h2>
+  <h3>What size is a Skool cover image?</h3><p>Skool recommends 1084 x 576 pixels (<a href="https://help.skool.com/article/245-growth-tab-and-skool-ads" rel="noopener">Skool Help Center</a>). This generator exports exactly that, as a PNG. More on the <a href="/skool-cover-image-size/">Skool cover image size</a> page.</p>
+  <h3>Why does my cover matter so much?</h3><p>Your group needs a cover image to be eligible for Discovery, and Skool lists "high-quality artwork" as a ranking boost and "low-quality artwork" as a penalty (<a href="https://help.skool.com/article/153-discovery-faqs" rel="noopener">Discovery FAQs</a>). For paid groups, Skool's Growth Boost ads also use your cover image, About page and pricing (<a href="https://help.skool.com/article/245-growth-tab-and-skool-ads" rel="noopener">Growth Tab and Skool Ads</a>).</p>
+  <h3>What makes a good cover?</h3><p>One clear promise in 6 words or fewer, strong contrast, a single focal point, text you can read at thumbnail size, and no tiny logos. The 5-point check above tests for these.</p>
+  <h3>What size should About page images be?</h3><p>See <a href="/skool-about-page-image-size/">Skool About page image size</a>.</p>
+  <h3>Is it really free?</h3><p>Yes. There's no sign-up and no email, and there's no watermark. Your images stay in your browser and nothing is uploaded.</p>
+</section>
+</main>
+<footer>Made by Cover Club. Not affiliated with Skool. Skool is a trademark of its owner. · <a href="/skool-cover-image-size/">Skool cover image size</a> · <a href="/skool-about-page-image-size/">Skool About page image size</a></footer>
+
+<script>
+const W=1084,H=576,SQ=(W-H)/2,PAD=24; // centre square x: 254..830
+const BGS=[{id:"night",name:"Night",grad:["#0E0E10","#1d1b12"],ac:"#FFD23F"},
+ {id:"fitness",ac:"#E63946"},{id:"ai",ac:"#7B5CFF"},{id:"business",ac:"#FFD23F"},
+ {id:"coaching",ac:"#FFD23F"},{id:"wellness",ac:"#9BD5A5"},{id:"ecom",ac:"#FFD23F"},
+ {id:"upload",name:"Upload"}];
+const $=id=>document.getElementById(id),cv=$("cv"),x=cv.getContext("2d"),ov=$("ov"),o=ov.getContext("2d");
+let cur="fitness",img=null,upImg=null,cache={},textBox=null,headSize=0,subSize=26;
+// background picker
+BGS.forEach(b=>{const t=document.createElement("button");t.type="button";t.dataset.id=b.id;t.title=b.name||b.id;
+  if(b.grad){t.style.background=`linear-gradient(120deg,${b.grad[0]},${b.grad[1]})`;t.textContent="Plain"}
+  else if(b.id==="upload"){t.textContent="+ Your photo"}
+  else{const i=document.createElement("img");i.src=`bg/${b.id}-thumb.jpg`;i.alt=b.id+" background";i.loading="lazy";t.appendChild(i)}
+  t.onclick=()=>{if(b.id==="upload"){if(upImg){pick("upload")}else $("bgimg").click();return}pick(b.id)};$("bgs").appendChild(t)});
+function pick(id){cur=id;document.querySelectorAll(".bgs button").forEach(b=>b.classList.toggle("on",b.dataset.id===id));
+  const b=BGS.find(q=>q.id===id);if(b&&b.ac)$("accent").value=b.ac;
+  if(id==="upload"){img=upImg;draw();return}
+  if(b.grad){img=null;draw();return}
+  if(cache[id]){img=cache[id];draw();return}
+  const i=new Image();i.onload=()=>{cache[id]=i;if(cur===id){img=i;draw()}};i.src=`bg/${id}.jpg`}
+$("bgimg").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const i=new Image();i.onload=()=>{upImg=i;pick("upload")};i.src=r.result};r.readAsDataURL(f)};
+["badge","head","sub","accent","align","shade","guides","gname","gdesc","gprice"].forEach(i=>$(i).addEventListener("input",draw));
+function hex2rgb(h){const n=parseInt(h.replace("#",""),16);return[n>>16,(n>>8)&255,n&255]}
+function relL([r,g,b]){const f=c=>{c/=255;return c<=.03928?c/12.92:Math.pow((c+.055)/1.055,2.4)};return .2126*f(r)+.7152*f(g)+.0722*f(b)}
+function cratio(a,b){const A=relL(a),B=relL(b);return(Math.max(A,B)+.05)/(Math.min(A,B)+.05)}
+function wrap(t,maxW){const out=[];t.split("\n").forEach(par=>{let line="";par.split(/\s+/).filter(Boolean).forEach(w=>{const tst=line?line+" "+w:w;if(x.measureText(tst).width>maxW&&line){out.push(line);line=w}else line=tst});if(line)out.push(line)});return out}
+let bgAvg=[0,0,0];
+function draw(){
+  const ac=$("accent").value,center=$("align").value==="center",b=BGS.find(q=>q.id===cur)||BGS[0];
+  if(img){const s=Math.max(W/img.width,H/img.height);x.drawImage(img,(W-img.width*s)/2,(H-img.height*s)/2,img.width*s,img.height*s);
+    const a=+$("shade").value;if(a>0){const sh=center?x.createRadialGradient(W/2,H/2,60,W/2,H/2,620):x.createLinearGradient(0,0,W,0);
+      if(center){sh.addColorStop(0,`rgba(0,0,0,${a})`);sh.addColorStop(1,`rgba(0,0,0,${Math.min(.9,a+.15)})`)}
+      else{sh.addColorStop(0,`rgba(0,0,0,${Math.min(.9,a+.25)})`);sh.addColorStop(.55,`rgba(0,0,0,${a})`);sh.addColorStop(.9,"rgba(0,0,0,0)")}
+      x.fillStyle=sh;x.fillRect(0,0,W,H)}}
+  else{const g=x.createLinearGradient(0,0,W,H);const gr=b.grad||BGS[0].grad;g.addColorStop(0,gr[0]);g.addColorStop(1,gr[1]);x.fillStyle=g;x.fillRect(0,0,W,H);
+    x.globalAlpha=.14;x.fillStyle=ac;x.beginPath();x.arc(W-60,80,260,0,7);x.fill();x.globalAlpha=1}
+  const fg="#FFFFFF";
+  const L=center?W/2:64,maxW=center?H-2*PAD:620;x.textAlign=center?"center":"left";x.textBaseline="alphabetic";
+  const head=$("head").value.toUpperCase().trim(),sub=$("sub").value.trim(),badge=$("badge").value.toUpperCase().trim();
+  let size=center?64:72;x.font=`800 ${size}px Poppins`;let lines=wrap(head,maxW);
+  while((lines.length*size*1.06>300||lines.some(l=>x.measureText(l).width>maxW))&&size>30){size-=2;x.font=`800 ${size}px Poppins`;lines=wrap(head,maxW)}
+  headSize=size;
+  x.font="500 26px Poppins";subSize=26;while(sub&&x.measureText(sub).width>maxW&&subSize>16){subSize--;x.font=`500 ${subSize}px Poppins`}
+  const bH=badge?44:0,blockH=bH+(badge?22:0)+lines.length*size*1.06+(sub?20+subSize*1.2:0);let y=(H-blockH)/2,top=y;
+  // sample background luminance under text block (before text is drawn)
+  try{const bx=Math.max(0,Math.round(center?L-maxW/2:L)),by=Math.max(0,Math.round(top)),bw=Math.round(Math.min(maxW,W-bx)),bh=Math.max(1,Math.round(Math.min(blockH,H-by)));
+    const d=x.getImageData(bx,by,bw,bh).data;let r=0,g=0,bb=0,n=0;for(let i=0;i<d.length;i+=64){r+=d[i];g+=d[i+1];bb+=d[i+2];n++}bgAvg=[r/n,g/n,bb/n]}catch(e){bgAvg=null}
+  let minX=1e9,maxX=-1e9;const ext=(w,cx)=>{const l=center?cx-w/2:cx;minX=Math.min(minX,l);maxX=Math.max(maxX,l+w)};
+  if(badge){x.font="700 18px Poppins";if(x.letterSpacing!==undefined)x.letterSpacing="2.5px";const bw=x.measureText(badge).width+40;const bx=center?L-bw/2:L;ext(bw,L);
+    x.fillStyle=ac;x.beginPath();x.roundRect?x.roundRect(bx,y,bw,bH,22):x.rect(bx,y,bw,bH);x.fill();x.fillStyle=relL(hex2rgb(ac))>.35?"#111":"#fff";
+    x.fillText(badge,center?L:bx+20,y+29);if(x.letterSpacing!==undefined)x.letterSpacing="0px";y+=bH+22}
+  x.font=`800 ${size}px Poppins`;x.fillStyle=fg;x.shadowColor="rgba(0,0,0,.35)";x.shadowBlur=img?12:0;
+  lines.forEach((l,i)=>{x.fillText(l,L,y+size*(i+1)*1.06-size*.14);ext(x.measureText(l).width,L)});y+=lines.length*size*1.06;
+  if(sub){x.font=`500 ${subSize}px Poppins`;x.fillStyle="#EDEDF2";x.fillText(sub,L,y+20+subSize);ext(x.measureText(sub).width,L);y+=20+subSize*1.2}
+  x.shadowBlur=0;
+  textBox=lines.length||badge||sub?{x0:minX,x1:maxX,y0:top,y1:top+blockH}:null;
+  drawOverlay();previews();checks(lines,head);
+}
+function drawOverlay(){o.clearRect(0,0,W,H);if(!$("guides").checked)return;
+  o.fillStyle="rgba(0,0,0,.28)";o.fillRect(0,0,SQ,H);o.fillRect(W-SQ,0,SQ,H);
+  o.setLineDash([12,8]);o.lineWidth=3;o.strokeStyle="#FFD23F";o.strokeRect(SQ+PAD,PAD,H-2*PAD,H-2*PAD);
+  o.setLineDash([]);o.font="600 18px Poppins";o.fillStyle="#FFD23F";o.textAlign="left";o.fillText("square safe area",SQ+PAD+8,PAD+24)}
+function previews(){const d=$("dc").getContext("2d");d.drawImage(cv,0,0,660,351);
+  const s=$("sqc").getContext("2d");s.drawImage(cv,SQ,0,H,H,0,0,340,340);
+  const ic=$("dic").getContext("2d"),ac=$("accent").value;ic.clearRect(0,0,56,56);ic.fillStyle=ac;ic.fillRect(0,0,56,56);
+  ic.fillStyle=relL(hex2rgb(ac))>.35?"#111":"#fff";ic.font="800 24px Poppins";ic.textAlign="center";ic.textBaseline="middle";ic.fillText(initials(),28,30);
+  $("dname").textContent=$("gname").value||"Your group";$("ddesc").textContent=$("gdesc").value;$("dprice").textContent=$("gprice").value;
+  const w=$("sqw"),inside=textBox&&textBox.x0>=SQ+PAD-1&&textBox.x1<=W-SQ-PAD+1&&textBox.y0>=PAD-1&&textBox.y1<=H-PAD+1;
+  if(!textBox){w.className="warn ok";w.textContent="No text on the cover, so nothing gets cut."}
+  else if(inside){w.className="warn ok";w.textContent="✓ All text sits inside the centre square. A square crop keeps your whole message."}
+  else{w.className="warn bad";w.innerHTML="⚠ Some text falls outside the square safe area. A square crop would cut it. Switch Layout to <b>Centred</b> or shorten the headline."}
+  w.dataset.inside=inside?"1":"0"}
+function initials(){const words=($("gname").value||$("head").value||"CC").trim().split(/\s+/);return((words[0]||"C")[0]+(words[1]?words[1][0]:"")).toUpperCase()}
+function checks(lines,head){const words=head.split(/\s+/).filter(Boolean).length;
+  const cardScale=330/W,px=headSize*cardScale;const cr=bgAvg?cratio([255,255,255],bgAvg):null;
+  const man=JSON.parse(sessionStorage.getItem("cc_man")||"{}");
+  const items=[
+   {k:"read",auto:true,ok:px>=11&&subSize*cardScale>=5,t:"Readable at thumbnail size",d:`Headline renders about ${px.toFixed(0)}px tall on a Discovery card (aim for 11px+).`},
+   {k:"words",auto:true,ok:words>0&&words<=6,t:"6 words or fewer",d:`Your headline has ${words} word${words===1?"":"s"}.`},
+   {k:"focal",auto:false,t:"One focal point",d:"One subject or idea. No collage of several photos."},
+   {k:"contrast",auto:true,ok:cr!==null&&cr>=4.5,t:"Strong contrast",d:cr===null?"Couldn't measure. Check by eye.":`White text vs background ≈ ${cr.toFixed(1)}:1 (aim for 4.5:1+). Try "Darken photo" if it's low.`},
+   {k:"logos",auto:false,t:"No tiny logos or small print",d:"Anything under about 20px on the full cover disappears on a card."}];
+  let pass=0;const ul=$("checks");ul.innerHTML="";
+  items.forEach(it=>{const li=document.createElement("li");let ok=it.auto?it.ok:!!man[it.k];if(ok)pass++;
+    const st=document.createElement("span");st.className="st "+(it.auto?(ok?"p":"f"):(ok?"p":"m"));st.textContent=ok?"✓":(it.auto?"!":"?");
+    const body=document.createElement("div");body.innerHTML=`<strong>${it.t}</strong> ${it.auto?"":"<em style='color:#BDBDC6;font-style:normal;font-size:12px'>(tick if true)</em>"}<small>${it.d}</small>`;
+    li.appendChild(st);li.appendChild(body);
+    if(!it.auto){const cb=document.createElement("input");cb.type="checkbox";cb.checked=ok;cb.setAttribute("aria-label",it.t);cb.onchange=()=>{man[it.k]=cb.checked;sessionStorage.setItem("cc_man",JSON.stringify(man));draw()};li.prepend(cb)}
+    ul.appendChild(li)});
+  $("score").textContent=`${pass}/5`}
+function save(c,n,done){c.toBlob(bl=>{const u=URL.createObjectURL(bl),a=document.createElement("a");a.download=n;a.href=u;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000);done&&done()},"image/png")}
+$("dl").onclick=()=>{draw();save(cv,"skool-cover-1084x576.png",()=>{const a=$("after");a.classList.add("show");a.scrollIntoView({behavior:"smooth",block:"nearest"})})};
+$("dlicon").onclick=()=>{const c=document.createElement("canvas");c.width=c.height=128;const k=c.getContext("2d"),ac=$("accent").value;
+  k.fillStyle=ac;k.fillRect(0,0,128,128);k.fillStyle=relL(hex2rgb(ac))>.35?"#111":"#fff";k.font="800 54px Poppins";k.textAlign="center";k.textBaseline="middle";k.fillText(initials(),64,68);save(c,"skool-icon-128.png")};
+window.exportCoverDataURL=()=>cv.toDataURL("image/png");
+pick("fitness");document.fonts.load("800 40px Poppins").then(draw);document.fonts.ready.then(draw);
+</script>
+</body>
+</html>
