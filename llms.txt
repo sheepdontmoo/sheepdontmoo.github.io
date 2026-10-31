@@ -1,0 +1,36 @@
+# PromptReel Lab
+
+> Free, photo-first AI ad prompts for ecommerce brands, with before/after renders. Prompts are written for ChatGPT image generation so the real product stays accurate. The full vault (300+ prompts across 8 niches, 40 before/after pairs) is a paid membership on Whop.
+
+## Free prompt libraries by niche
+- [AI fashion ad prompts](https://sheepdontmoo.github.io/ai-fashion-ad-prompts/)
+- [AI food ad prompts](https://sheepdontmoo.github.io/ai-food-ad-prompts/)
+- [AI home ad prompts](https://sheepdontmoo.github.io/ai-home-ad-prompts/)
+- [AI jewelry ad prompts](https://sheepdontmoo.github.io/ai-jewelry-ad-prompts/)
+- [AI pet product ad prompts](https://sheepdontmoo.github.io/ai-pets-ad-prompts/)
+- [AI skincare ad prompts](https://sheepdontmoo.github.io/ai-skincare-ad-prompts/)
+- [AI supplement ad prompts](https://sheepdontmoo.github.io/ai-supplements-ad-prompts/)
+- [AI tech ad prompts](https://sheepdontmoo.github.io/ai-tech-ad-prompts/)
+- [AI clothing product photos](https://sheepdontmoo.github.io/ai-clothing-product-photos/)
+- [AI food and drink product photos](https://sheepdontmoo.github.io/ai-food-drink-product-photos/)
+- [AI tech gadget product photos](https://sheepdontmoo.github.io/ai-tech-gadget-product-photos/)
+- [AI home decor product photos](https://sheepdontmoo.github.io/ai-home-decor-product-photos/)
+
+## Free tools
+- [AI product ad prompt generator](https://sheepdontmoo.github.io/generator/): no login, pick niche and shot type, get a photo-first ChatGPT prompt.
+- [AI ad claim-checker prompts](https://sheepdontmoo.github.io/ai-ad-claim-checker/): for supplement and skincare brands.
+- [Skool cover generator](https://sheepdontmoo.github.io/skool-cover-generator/) and [Skool cover image size](https://sheepdontmoo.github.io/skool-cover-image-size/)
+
+## Guides
+- [All guides](https://sheepdontmoo.github.io/guides/)
+- [AI product photos that keep your product](https://sheepdontmoo.github.io/guides/ai-product-photos-that-keep-your-product/)
+- [One product photo to 20 ads](https://sheepdontmoo.github.io/guides/one-product-photo-to-20-ads/)
+- [AI UGC without faking customers](https://sheepdontmoo.github.io/guides/ai-ugc-without-faking-customers/)
+- [Test ad angles with AI statics](https://sheepdontmoo.github.io/guides/test-ad-angles-with-ai-statics/)
+
+## Membership and affiliates
+- [PromptReel Lab on Whop](https://whop.com/promptreel-lab/promptreel-lab/): the full prompt vault.
+- [Affiliate programme](https://sheepdontmoo.github.io/affiliates/): 50% recurring commission.
+
+## Optional
+- [Remote jobs club](https://sheepdontmoo.github.io/remote-jobs-club/): scam-checked remote job leads, powered by [Remote1st](https://www.remote1stjobs.com/).
